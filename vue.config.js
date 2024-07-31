@@ -11,7 +11,7 @@ module.exports = defineConfig({
         mapboxgl: "mapbox-gl",
       }),
       new webpack.DefinePlugin({
-        // Vue CLI is in maintenance mode, and probably won't merge my PR to fix this in their tooling
+        // Vue CLI is in maintenance mode, and probably won"t merge my PR to fix this in their tooling
         // https://github.com/vuejs/vue-cli/pull/7443
         __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: "false",
       }),
@@ -34,6 +34,25 @@ module.exports = defineConfig({
         }
         // Add isCustomElement option
         options.compilerOptions.isCustomElement = (tag) => tag === "marquee";
+        return options;
+      });
+
+    config.module
+      .rule("js")
+      .test(/\.js$/)
+      .include.add(/node_modules\/@fortawesome\/fontawesome-free\/js\/all.js/)
+      .add(/node_modules\/apexcharts\/dist\/apexcharts.common.js/)
+      .add(
+        /node_modules\/@amcharts\/amcharts4\/\.internal\/pdfmake\/vfs_fonts.js/
+      )
+      .add(
+        /node_modules\/@amcharts\/amcharts4\/\.internal\/bundled\/xlsx\/xlsx.mjs/
+      )
+      .add(/node_modules\/pdfmake\/build\/pdfmake.js/)
+      .end()
+      .use("babel-loader")
+      .loader("babel-loader")
+      .tap((options) => {
         options.compact = true;
         return options;
       });
