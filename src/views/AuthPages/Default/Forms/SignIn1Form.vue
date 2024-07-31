@@ -128,7 +128,7 @@ export default {
         const response = await instance.post("/account/auth/login", this.user);
         const { token, expired_at } = response.data;
         authStore.setAuthData(token, expired_at);
-        this.$router.push({ name: "dashboard.home" });
+        this.$router.push({ name: "dashboard.home-1" });
       } catch (error) {
         this.loading = false;
         alert(error.response.data.message);
