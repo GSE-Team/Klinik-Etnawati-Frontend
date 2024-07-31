@@ -1,0 +1,176 @@
+[
+  {
+    "title": "Dashboard",
+    "name": "sidebar.dashboard",
+    "is_heading": true,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "",
+    "badge" : false
+  },
+  {
+    "title": "Dashboard",
+    "name": "sidebar.dashboard2",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "dashboard.home-1"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-home-8-fill",
+    "badge" : false
+  },
+  {
+    "title": "Rekam Medis",
+    "name": "sidebar.medrec",
+    "is_heading": true,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "",
+    "badge" : false
+  },
+  {
+    "title": "Rekam Medis",
+    "name": "sidebar.medrec1",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "medrec.record"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-dossier-fill",
+    "badge" : false
+  },
+  {
+    "title": "Manajemen Data",
+    "name": "sidebar.management",
+    "is_heading": true,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "",
+    "badge" : false
+  },  
+  {
+    "title": "Doctor",
+    "name": "sidebar.doctor",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "user.doctor"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-stethoscope-fill",
+    "badge" : false
+  },
+  {
+    "title": "Patient",
+    "name": "sidebar.patient",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "user.patient"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-empathize-fill",
+    "badge" : false
+  },
+  {
+    "title": "Nurse",
+    "name": "sidebar.nurse",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "user.nurse"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-nurse-fill",
+    "badge" : false
+  },
+  {
+    "title": "Transaction",
+    "name": "sidebar.transaction",
+    "is_heading": true,
+    "is_active": false,
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "",
+    "badge" : false
+  },
+  {
+    "title": "Payment",
+    "name": "sidebar.payment",
+    "is_heading": false,
+    "is_active": false,
+    "link": {
+      "name": "transaction.payment"
+    },
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-currency-fill",
+    "badge" : false
+  },
+  {
+    "title": "Letter",
+    "name": "sidebar.letter",
+    "is_heading": false,
+    "is_active": false,
+    "link": "",
+    "class_name": "",
+    "is_icon_class": true,
+    "icon": "ri-edit-fill",
+    "children": [
+      {
+        "title": "Caption Letter",
+        "name": "sidebar.caption",
+        "is_active": false,
+        "link": {
+          "name": "letter.caption"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-file-text-fill"
+      },
+      {
+        "title": "Referral Letter",
+        "name": "sidebar.referral",
+        "is_active": false,
+        "link": {
+          "name": "letter.referral"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-user-shared-2-fill"
+      },
+      {
+        "title": "Action Approval Letter",
+        "name": "sidebar.actionApproval",
+        "is_active": false,
+        "link": {
+          "name": "letter.actionApproval"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-pulse-fill"
+      },
+      {
+        "title": "Laboratory Letter",
+        "name": "sidebar.laboratory",
+        "is_active": false,
+        "link": {
+          "name": "letter.laboratory"
+        },
+        "class_name": "",
+        "is_icon_class": true,
+        "icon": "ri-flask-fill"
+      }
+    ]
+  }
+]
