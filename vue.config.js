@@ -34,6 +34,7 @@ module.exports = defineConfig({
         }
         // Add isCustomElement option
         options.compilerOptions.isCustomElement = (tag) => tag === "marquee";
+        options.compact = true;
         return options;
       });
   },
